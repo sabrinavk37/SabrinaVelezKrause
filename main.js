@@ -7,22 +7,22 @@ const planes = [
   {
     nombre: "Nutricion",
     descripcion: "Un plan diseñado para mejorar tu alimentación y alcanzar tus metas de salud.",
-    precio: 50
+    precio: 3500
   },
   {
     nombre: "Fitness",
     descripcion: "Un plan de entrenamiento personalizado para lograr tus objetivos físicos.",
-    precio: 75
+    precio: 4000
   },
   {
     nombre: "Spa",
     descripcion: "Un plan relajante y revitalizante para cuidar tu cuerpo y mente.",
-    precio: 100
+    precio: 10000
   },
   {
     nombre: "Mercado Saludable",
     descripcion: "Un plan para aprender a elegir los alimentos más saludables en el supermercado.",
-    precio: 25
+    precio: 500
   }
 ];
 
@@ -50,5 +50,6 @@ for (let i = 0; i < carrito.length; i++) {
   resumen += `${i + 1}. ${carrito[i].nombre}: $${carrito[i].precio}\n`;
 }
 resumen += `Total: $${total}`;
+
 
 graciasPor = alert(`Ya enviamos a tu email toda la información de tu plan. Que disfrutes este gran camino saludable.\n\n${resumen}`);
